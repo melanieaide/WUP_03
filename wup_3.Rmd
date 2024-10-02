@@ -19,6 +19,7 @@ Is there a difference between the alcohol consumed between the row you choose to
 
 ## Method
 Predict alcohol consumption base on where you sit
+
 $H_0$: There is no difference between the alcohol consumed between the row you choose to sit in.
 
 $H_A$: There is a difference between the alcohol consumed between the row you choose to sit in
@@ -44,6 +45,8 @@ basicCN + geom_boxplot()
 ```{r}
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
+
+The boxplot shows that people that sit in the back drink the most. 
 
 ## Numerical Summarys 
 
